@@ -1,4 +1,4 @@
-rpiProc = addprocs(["julia-user@NODE-RPI3"],dir="/home/julia-user/julia-0.6.0/bin/")
+rpiProc = addprocs(["julia-user@NODE-RPI3"],dir="/home/pi/.julia/bin/")
 
 include("GPIO_Device.jl")
 
