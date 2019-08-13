@@ -1,8 +1,8 @@
 #Connect to the different nodes whose user is julia-user. 
 #Of course, the nodes are set up as passwordless SSH.
-rpiProc = addprocs(["julia-user@NODE-RPI2"],dir="/home/julia-user/julia-0.6.0/bin/")
-bbbProc = addprocs(["julia-user@NODE-BBB"],dir="/home/julia-user/julia-0.6.0/bin/")
-udooProc = addprocs(["julia-user@NODE-UDOOX86"],dir="/home/julia-user/julia-0.6.0/bin/")
+rpiProc = addprocs(["julia-user@NODE-RPI2"],dir="/home/pi/.julia/bin/")
+bbbProc = addprocs(["julia-user@NODE-BBB"],dir="/home/pi/.julia/bin/")
+udooProc = addprocs(["julia-user@NODE-UDOOX86"],dir="/home/pi/.julia/bin/")
 
 #These are routines written to manipulate the GPIO
 #via the file system on the development boards.
