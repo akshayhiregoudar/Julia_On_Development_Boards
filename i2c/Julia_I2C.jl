@@ -44,11 +44,11 @@ export i2c_init, i2c_smbus_write_quick,
 		i2c_smbus_read_i2c_block_data, i2c_smbus_write_i2c_block_data,
 		i2c_smbus_block_process_call
 
-const I2CLIBRARY 				= "/home/julia-user/julia-0.6.0/bin/libi2c-dev.so"
+const I2CLIBRARY 				= "/home/pi/.julia/bin/libi2c-dev.so"
 const I2C_SMBUS_I2C_BLOCK_MAX	= 32
 
 #macro I2CLIBRARY
-#	return :("/home/julia-user/julia-0.6.0/bin/libi2c-dev.so")
+#	return :("/home/pi/.julia/bin/libi2c-dev.so")
 #end
 
 function i2c_init(filename::String, addr::UInt8, slave_addr::UInt16)
